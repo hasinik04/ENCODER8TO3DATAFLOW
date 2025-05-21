@@ -44,13 +44,21 @@ Figure 02  Encoder 8 * 3
 
 Developed by: RegisterNumber:
 */
-
+```module encoder(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= ( y4 | y5 | y6 | y7);
+assign b= ( y2 | y3 | y6 | y7);
+assign c= ( y1 | y3 | y5 | y7);
+endmodule
+```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2025-05-21 160142](https://github.com/user-attachments/assets/87df45a6-e92a-4459-a402-22ea28169290)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2025-05-21 160207](https://github.com/user-attachments/assets/4cbc2fb2-4435-4354-833b-e7fb1d316afc)
 
 **RESULTS**
 
-
-
+Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables are verified.
 
